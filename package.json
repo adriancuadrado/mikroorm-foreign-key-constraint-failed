@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@mikro-orm/core": "^6.4.16",
+    "@mikro-orm/sqlite": "^6.4.16",
+    "typescript": "^5.8.3",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@mikro-orm/cli": "^6.4.16",
+    "ts-node": "^10.9.2"
+  }
+}
