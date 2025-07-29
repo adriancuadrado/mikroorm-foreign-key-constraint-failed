@@ -6,7 +6,7 @@ import { EntityA } from './entities/EntityA';
 
   const orm = await MikroORM.init(config);
   const em = orm.em.fork();
-  const entityAs = await em.findAll(EntityA, { populate: ['entityBs'] });
+  const entityAs = await em.findAll(EntityA);
   for (const ea of entityAs) {
     await em.removeAndFlush(ea);
   }

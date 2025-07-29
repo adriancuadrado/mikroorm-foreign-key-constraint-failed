@@ -8,7 +8,7 @@ export class EntityB {
   @PrimaryKey({ type: 'uuid' })
   uuid = v4();
 
-  @ManyToOne(() => EntityA)
+  @ManyToOne(() => EntityA, { deleteRule: "cascade" })
   entityA!: EntityA;
 
 }
