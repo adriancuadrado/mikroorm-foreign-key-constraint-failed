@@ -1,5 +1,7 @@
 # SQLITE_CONSTRAINT: FOREIGN KEY constraint failed
 
+https://github.com/mikro-orm/mikro-orm/issues/6779
+
 Run these commands to replicate the error:
 
 ```
