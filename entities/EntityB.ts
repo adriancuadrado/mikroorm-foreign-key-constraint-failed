@@ -1,4 +1,4 @@
-import { Collection, Entity, ManyToOne, OneToMany, PrimaryKey } from "@mikro-orm/core";
+import { Entity, ManyToOne, PrimaryKey } from "@mikro-orm/core";
 import { v4 } from 'uuid';
 import { EntityA } from "./EntityA";
 

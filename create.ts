@@ -9,7 +9,7 @@ import { EntityB } from './entities/EntityB';
   const em = orm.em.fork();
   const entityA = new EntityA();
   entityA.entityBs.add(new EntityB());
-  em.persistAndFlush(entityA);
-  orm.close();
+  await em.persistAndFlush(entityA);
+  await orm.close();
 
 })();

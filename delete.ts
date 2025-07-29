@@ -6,10 +6,10 @@ import { EntityA } from './entities/EntityA';
 
   const orm = await MikroORM.init(config);
   const em = orm.em.fork();
-  const entityAs = await em.findAll(EntityA);
-  entityAs.forEach(async ea => {
+  const entityAs = await em.findAll(EntityA, { populate: ['entityBs'] });
+  for (const ea of entityAs) {
     await em.removeAndFlush(ea);
-  });
-  orm.close();
+  }
+  await orm.close();
 
 })();
